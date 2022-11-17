@@ -1,0 +1,26 @@
+.main-content {
+    display: flex;
+}
+
+.sidebar-container {
+    display: flex;
+    flex-direction: column-reverse;
+    background-color: $background-color;
+    width: 5rem;
+    height: 91.95vh;
+    justify-content: center;
+    align-items: center;
+    & img {
+        height: 3rem;
+        width: 3rem;
+        margin-bottom: 1rem;
+    }
+    & p {
+        color: #FFF;
+        writing-mode: vertical-lr;
+        text-orientation: mixed;
+        transform: rotate(180deg);
+        margin-top: 4rem;
+        font-size: .7rem;
+    }
+}
