@@ -1,0 +1,43 @@
+.dashboard-main-content {
+    display: flex; 
+    flex-direction: column;
+    display: block;
+    width: 100%;
+}
+
+.dashboard-header {
+    background-color: green;
+    width: 100%; 
+}
+
+.all-graphs-plus-average {
+    display: flex; 
+    flex-direction: row;
+}
+
+.all-graphs {
+    // background-color: blue;
+    border: 2px solid black;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    width: 835px;
+
+    .up-graph {
+        background-color: yellow;
+        height: 320px;
+    }
+    .down-graphs {
+        display: flex;
+        flex-direction: row;
+
+        
+        background-color: yellowgreen;
+        height: 260px;
+    }
+}
+
+.average-container {
+    border: 2px solid maroon;
+    width: 260px;
+}

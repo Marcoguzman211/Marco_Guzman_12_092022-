@@ -48,6 +48,12 @@ input {
   border-radius: 0;
 }
 
+.main {
+  display: flex;
+  flex-direction: row;
+  background-color: lightgray;
+}
+
 .navbar-container {
   display: flex;
   padding: 0.5rem;
@@ -66,16 +72,12 @@ input {
   margin-right: 5rem;
 }
 
-.main-content {
-  display: flex;
-}
-
 .sidebar-container {
   display: flex;
   flex-direction: column-reverse;
   background-color: #020203;
   width: 5rem;
-  height: 91.95vh;
+  height: 100vh;
   justify-content: center;
   align-items: center;
 }
@@ -92,4 +94,44 @@ input {
   transform: rotate(180deg);
   margin-top: 4rem;
   font-size: 0.7rem;
+}
+
+.dashboard-main-content {
+  display: flex;
+  flex-direction: column;
+  display: block;
+  width: 100%;
+}
+
+.dashboard-header {
+  background-color: green;
+  width: 100%;
+}
+
+.all-graphs-plus-average {
+  display: flex;
+  flex-direction: row;
+}
+
+.all-graphs {
+  border: 2px solid black;
+  height: 50vh;
+  display: flex;
+  flex-direction: column;
+  width: 835px;
+}
+.all-graphs .up-graph {
+  background-color: yellow;
+  height: 320px;
+}
+.all-graphs .down-graphs {
+  display: flex;
+  flex-direction: row;
+  background-color: yellowgreen;
+  height: 260px;
+}
+
+.average-container {
+  border: 2px solid maroon;
+  width: 260px;
 }/*# sourceMappingURL=main.css.map */

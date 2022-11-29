@@ -1,41 +1,45 @@
 import React, { useState} from "react";
 import { useEffect } from "react";
-import { BarChart, Bar, Cell, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer } from "recharts";
-/* import {USER_MAIN_DATA,
-  USER_ACTIVITY,
-  USER_AVERAGE_SESSIONS,
-  USER_PERFORMANCE} from "../mocks/data"; */
-
-import { getUserData, getUserDataActivity } from "../utils/API";
+import { getUserData, getUserDataActivity, getUserDataAverageSessions, getUserDataPerformance } from "../utils/API";
+import ActivityType from "./ActivityType";
+import MainActivity from "./MainActivity";
+import Objectifs from "./Objectifs";
+import ScoreMoyen from "./ScoreMoyen";
 
 const Dashboard = () => {
   const [userData, setUserData] = useState(null);
-  const [userDataActivity, setUserDataActivity] = useState(null);
+  const [userFirstName, setUserFirstName] = useState(null);
+  const [scoreMoyen, setScoreMoyen] = useState(null);
 
   useEffect(() => {
     getUserData().then((data) => {
       //Gets username from API response
-      const userName = data.data.data.userInfos.firstName;
-      setUserData(userName);
-    });
-
-    getUserDataActivity().then((data) => {
-      //Gets activity data from API response
-      const userActivity = data.data.data.sessions;
-      setUserDataActivity(userActivity);
+      setUserData(data);
+      setUserFirstName(data.userInfos.firstName);
+      setScoreMoyen(data.score);
     });
   }, []);
-
-  console.log(userDataActivity);
   return (
-    <div>
-        {/* Header Title et félicitations */}
-        <div>
-            <h1>Bonjour</h1><h1>{userData}</h1>
+    <div className="dashboard-main-content">
+        <div className="dashboard-header">
+            <h1>Bonjour</h1><h1>{userFirstName} </h1>
             <p>Félicitation ! Vous avez explosé vos objectifs hier 👏</p>
         </div>
         {/* Main Activity */}
-        <div>
+        <div className="all-graphs-plus-average">
+          <div className="all-graphs">
+            <div className="up-graph">
+            <MainActivity />
+            </div>
+            <div className="down-graphs">
+              <Objectifs />
+              <ActivityType />
+              <ScoreMoyen data={scoreMoyen} />
+            </div>
+          </div>
+          <div className="average-container">
+
+          </div>
         </div>
     </div>
   );
