@@ -5,6 +5,7 @@ import ActivityType from "./ActivityType";
 import MainActivity from "./MainActivity";
 import Objectifs from "./Objectifs";
 import ScoreMoyen from "./ScoreMoyen";
+import SmallCard from "./SmallCard";
 
 const Dashboard = () => {
   const [userData, setUserData] = useState(null);
@@ -14,15 +15,26 @@ const Dashboard = () => {
   useEffect(() => {
     getUserData().then((data) => {
       //Gets username from API response
-      setUserData(data);
+      setUserData(data.keyData);
       setUserFirstName(data.userInfos.firstName);
       setScoreMoyen(data.score);
     });
   }, []);
+
+  let elements = [];
+  for (const property in userData) {
+    /* console.log(`${property}: ${userData[property]}`); */
+    let object = {
+      property: property,
+      value: userData[property],
+    };
+    elements.push(<SmallCard data={object} key={property}/>);
+  }
+
   return (
     <div className="dashboard-main-content">
         <div className="dashboard-header">
-            <h1>Bonjour</h1><h1>{userFirstName} </h1>
+            <h1>Bonjour <mark className="red-text">{userFirstName}</mark></h1>
             <p>Félicitation ! Vous avez explosé vos objectifs hier 👏</p>
         </div>
         {/* Main Activity */}
@@ -38,7 +50,7 @@ const Dashboard = () => {
             </div>
           </div>
           <div className="average-container">
-
+            {elements}
           </div>
         </div>
     </div>

@@ -1,0 +1,19 @@
+.smallcard-container {
+    display: flex;
+    padding: 1.5rem;
+    background-color: #FBFBFB;
+    margin: 1rem;
+    border-radius: 5px;
+}
+
+.smallcard-image {
+    padding: 1rem;
+    border-radius: 10px;
+}
+
+.smallcard-texts {
+    padding: 1rem;
+    & p {
+        font-size: .8rem;
+    }
+}

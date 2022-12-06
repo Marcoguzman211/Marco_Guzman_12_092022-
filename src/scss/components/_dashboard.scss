@@ -3,28 +3,38 @@
     flex-direction: column;
     display: block;
     width: 100%;
+    padding: 3rem;
 }
 
 .dashboard-header {
-    background-color: green;
     width: 100%; 
+    & h1 {
+        font-size: 2rem;
+    }
+
+    & p {
+        margin-top: 1rem;
+    } 
+}
+
+mark.red-text {
+    color:#ff0000;
+    background: none;
 }
 
 .all-graphs-plus-average {
     display: flex; 
     flex-direction: row;
+    margin-top: 4rem;
 }
 
 .all-graphs {
-    // background-color: blue;
-    border: 2px solid black;
     height: 50vh;
     display: flex;
     flex-direction: column;
-    width: 835px;
+    width: 860px;
 
     .up-graph {
-        background-color: yellow;
         height: 320px;
     }
     .down-graphs {
@@ -32,12 +42,10 @@
         flex-direction: row;
 
         
-        background-color: yellowgreen;
         height: 260px;
     }
 }
 
 .average-container {
-    border: 2px solid maroon;
     width: 260px;
 }
