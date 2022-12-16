@@ -44,9 +44,15 @@ const Dashboard = () => {
             <MainActivity />
             </div>
             <div className="down-graphs">
-              <Objectifs />
-              <ActivityType />
-              <ScoreMoyen data={scoreMoyen} />
+              <div className="objectifs-graph">
+                <Objectifs />
+              </div>
+              <div className="activity-graph">
+                <ActivityType />
+              </div>
+              <div className="scoremoyen-graph">
+                <ScoreMoyen data={scoreMoyen} />
+              </div>
             </div>
           </div>
           <div className="average-container">

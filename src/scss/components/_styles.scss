@@ -7,15 +7,18 @@
     background-color: $primary-red;
     color: white;
     padding: 0.5rem;
-    border: transparent;
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
+    gap: 2rem;
     & p {
         font-size: 12px;
     }
+}
 
-    &:focus {
-        border: transparent;
+.main-activity-label-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem 1rem;
+    & div {
+        display: flex;
+        gap: 1rem;
     }
 }

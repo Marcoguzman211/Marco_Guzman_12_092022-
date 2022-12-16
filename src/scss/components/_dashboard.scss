@@ -35,17 +35,55 @@ mark.red-text {
     width: 860px;
 
     .up-graph {
-        height: 420px;
+        height: 350px;
+        padding-bottom: 5rem;
+        background-color: #FBFBFB;
+        border-radius: 10px;
     }
     .down-graphs {
         display: flex;
         flex-direction: row;
+        height: 650px;
+        margin-top: 2rem;
 
-        
-        height: 260px;
+        & div {
+            width: 33%;
+        }
     }
+}
+
+.objectifs-graph {
+    background-color: $primary-red;
+}
+
+.activity-graph {
+    background-color: $background-color;
+} 
+
+.scoremoyen-graph {
+    background-color: $gray-color;
 }
 
 .average-container {
     width: 260px;
+}
+
+.objectifs-custom-tooltip {
+    background-color: white;
+    font-size: 8px;
+    padding: 6px 7px;
+}
+
+.objectifs-label-container {
+    position: absolute;
+    font-size: 15px;
+    color: #FFFFFF;
+    margin-top: 29px;
+    margin-left: 34px;
+    width: 147px;
+    opacity: 50%;
+}
+
+.objectifs-custom-hover {
+    stroke: transparent;
 }

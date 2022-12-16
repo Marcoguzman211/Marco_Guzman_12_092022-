@@ -57,16 +57,20 @@ input {
   background-color: #FF0101;
   color: white;
   padding: 0.5rem;
-  border: transparent;
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
+  gap: 2rem;
 }
 .activity-custom-tooltip p {
   font-size: 12px;
 }
-.activity-custom-tooltip:focus {
-  border: transparent;
+
+.main-activity-label-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem 1rem;
+}
+.main-activity-label-container div {
+  display: flex;
+  gap: 1rem;
 }
 
 .navbar-container {
@@ -147,16 +151,55 @@ mark.red-text {
   width: 860px;
 }
 .all-graphs .up-graph {
-  height: 420px;
+  height: 350px;
+  padding-bottom: 5rem;
+  background-color: #FBFBFB;
+  border-radius: 10px;
 }
 .all-graphs .down-graphs {
   display: flex;
   flex-direction: row;
-  height: 260px;
+  height: 650px;
+  margin-top: 2rem;
+}
+.all-graphs .down-graphs div {
+  width: 33%;
+}
+
+.objectifs-graph {
+  background-color: #FF0101;
+}
+
+.activity-graph {
+  background-color: #020203;
+}
+
+.scoremoyen-graph {
+  background-color: #FBFBFB;
 }
 
 .average-container {
   width: 260px;
+}
+
+.objectifs-custom-tooltip {
+  background-color: white;
+  font-size: 8px;
+  padding: 6px 7px;
+}
+
+.objectifs-label-container {
+  position: absolute;
+  font-size: 15px;
+  color: #FFFFFF;
+  margin-top: 29px;
+  margin-left: 34px;
+  width: 147px;
+  opacity: 50%;
+}
+
+.objectifs-custom-hover {
+  stroke: transparent;
 }
 
 .smallcard-container {
