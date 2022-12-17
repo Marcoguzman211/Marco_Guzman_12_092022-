@@ -171,11 +171,12 @@ mark.red-text {
 }
 
 .activity-graph {
-  background-color: #020203;
+  background-color: #282D30;
 }
 
 .scoremoyen-graph {
   background-color: #FBFBFB;
+  border: 2px solid blue;
 }
 
 .average-container {

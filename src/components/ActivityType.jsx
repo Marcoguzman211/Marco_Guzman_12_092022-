@@ -19,11 +19,11 @@ const ActivityType = () => {
         <ResponsiveContainer width="100%" height="100%">
         <RadarChart width={263} height={258} 
             outerRadius="80%" data={userDataPerformance}>
-            <PolarGrid />
-            <PolarAngleAxis dataKey="kind" tick={{ fontSize: 11 }}/>
-            {/* <PolarRadiusAxis dataKey="value" /> */}
+            <PolarGrid radialLines={false} />
+            <PolarAngleAxis dataKey="kind" tick={{ fontSize: 11 }} tickLine={false} axisLine={false} stroke="#ffffff"/>
             <Radar dataKey="value" stroke="#e60000" 
                 fill="#e60000" fillOpacity={0.6} />
+          <PolarRadiusAxis axisLine={false} tick={false} />
         </RadarChart>
         </ResponsiveContainer>
     </>

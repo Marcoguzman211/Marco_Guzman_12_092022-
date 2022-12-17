@@ -18,22 +18,22 @@ const ScoreMoyen = (data) => {
       ];
   return (
     <>
-        <ResponsiveContainer width="100%" height="100%">
-        <PieChart width={263} height={258}>
-          <Pie
-            data={finalData}
-            startAngle={80}
-            endAngle={450}
-            innerRadius={78}
-            outerRadius={90}
-            cornerRadius={10}
-            dataKey="value"
-          >
-            <Cell fill={"#e60000"} />
-            <Cell fill={"transparent"} stroke={"transparent"} />
-          </Pie>
-        </PieChart>
-        </ResponsiveContainer>
+      <ResponsiveContainer width="100%" height="100%">
+      <PieChart width={263} height={258}>
+        <Pie
+          data={finalData}
+          startAngle={80}
+          endAngle={450}
+          innerRadius={78}
+          outerRadius={90}
+          cornerRadius={10}
+          dataKey="value"
+        >
+          <Cell fill={"#e60000"} />
+          <Cell fill={"transparent"} stroke={"transparent"} />
+        </Pie>
+      </PieChart>
+      </ResponsiveContainer>
     </>
   );
 };

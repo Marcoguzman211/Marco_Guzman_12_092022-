@@ -1,4 +1,5 @@
 import axios from "axios";
+import { performanceTranslator } from "./converter";
 
 export const getUserData = async () => {
   try {
@@ -56,7 +57,8 @@ export const getUserDataPerformance = async () => {
       //Element.kind et element.value
       for (let i = 0; i < kindsList.length; i++) {
         if (element.kind - 1 === i) {
-          element.kind = kindsList[i];
+          /* element.kind = kindsList[i].charAt(0).toUpperCase() + kindsList[i].slice(1); */
+          element.kind = performanceTranslator(kindsList[i]);
         }
       }
     });

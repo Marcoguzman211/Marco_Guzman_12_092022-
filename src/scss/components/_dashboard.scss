@@ -35,7 +35,7 @@ mark.red-text {
     width: 860px;
 
     .up-graph {
-        height: 350px;
+		height: 350px;
         padding-bottom: 5rem;
         background-color: #FBFBFB;
         border-radius: 10px;
@@ -57,12 +57,16 @@ mark.red-text {
 }
 
 .activity-graph {
-    background-color: $background-color;
+    background-color: #282D30;
 } 
 
+//Score moyen container
 .scoremoyen-graph {
     background-color: $gray-color;
+    border: 2px solid blue;
 }
+
+//Fin Score moyen container
 
 .average-container {
     width: 260px;
