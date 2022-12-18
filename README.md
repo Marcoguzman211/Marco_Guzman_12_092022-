@@ -1,70 +1,80 @@
-# Getting Started with Create React App
+![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white) ![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white) ![SASS](https://img.shields.io/badge/SASS-hotpink.svg?style=for-the-badge&logo=SASS&logoColor=white) ![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E) ![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# SportSee: sports coaching
 
-## Available Scripts
+This project from OpenClassrooms creates a dashboard that aims for the user to follow all informations about his/her session, kind of performance, calories burned, daily score etc.
 
-In the project directory, you can run:
+## Author
 
-### `npm start`
+Marco Guzman
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Technologies and dependencies
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- Javascript
+- Node.js
+- React
+- React-dom
+- React-router-dom
+- Axios
+- Prop-types
+- Recharts
+- Sass
 
-### `npm test`
+## How to install
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### On your computer
 
-### `npm run build`
+- Create main directory:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- Clone project P9-front-end-dashboard from Github into your computer. This repo contains all the source code to run the API for the analytics of the dashboard page:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+```console
+$ git clone https://github.com/OpenClassrooms-Student-Center/P9-front-end-dashboard
+```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### On the terminal
 
-### `npm run eject`
+- Change directory to cd P9-front-end-dashboard
+- npm command to install the dependencies:
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+```console
+$ yarn install
+```
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- Run micro API:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+```console
+$ yarn dev
+```
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+- The API will run on http://localhost:3001
+- Keep terminal open
+- Open new terminal
+- Clone my project:
 
-## Learn More
+```console
+$ git clone https://github.com/Marcoguzman211/Marco_Guzman_12_092022-
+```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+- Install dependencies:
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+```console
+$ npm install
+```
 
-### Code Splitting
+- Start project:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+```console
+$ npm start
+```
 
-### Analyzing the Bundle Size
+- Keep terminal open
+- Launch React app on new port http://localhost:3000
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+```
 
-### Making a Progressive Web App
+## URLs
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Front-end : http://localhost:3000
+Back-end : http://localhost:3001
+```
