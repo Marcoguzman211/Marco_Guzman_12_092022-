@@ -37,6 +37,16 @@ const ScoreMoyen = (data) => {
           <Cell fill={"#e60000"} />
           <Cell fill={"transparent"} stroke={"transparent"} />
         </Pie>
+        <Pie
+          data={{value: 100}}
+          startAngle={80}
+          endAngle={450}
+          innerRadius={0}
+          outerRadius={78}
+          dataKey="value"
+          fill="white"
+        >
+        </Pie>
       </PieChart>
       </ResponsiveContainer>
     </>

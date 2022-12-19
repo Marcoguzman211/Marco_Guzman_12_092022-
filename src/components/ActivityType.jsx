@@ -22,8 +22,8 @@ const ActivityType = () => {
   return (
     <>
         <ResponsiveContainer width="100%" height="100%">
-        <RadarChart width={263} height={258} 
-            outerRadius="80%" data={userDataPerformance}>
+        <RadarChart width="50%" height="50%" cx="50%" cy="50%" 
+            outerRadius="55%" data={userDataPerformance}>
             <PolarGrid radialLines={false} />
             <PolarAngleAxis dataKey="kind" tick={{ fontSize: 11 }} tickLine={false} axisLine={false} stroke="#ffffff"/>
             <Radar dataKey="value" stroke="#e60000" 

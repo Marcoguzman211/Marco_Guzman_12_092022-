@@ -11,8 +11,8 @@ const MainActivityLabel = () => {
     <div className="main-activity-label-container">
         <h3>Activité quotidienne</h3>
         <div>
-            <p> <img src={redDot} alt="red dot"/> Poids (kg)</p>
-            <p> <img src={blackDot} alt="black dot" /> Calories brûlées (kCal)</p>
+            <p> <img src={blackDot} alt="red dot"/> Poids (kg)</p>
+            <p> <img src={redDot} alt="black dot" /> Calories brûlées (kCal)</p>
         </div>
     </div>
   );

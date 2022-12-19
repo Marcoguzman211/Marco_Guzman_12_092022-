@@ -145,7 +145,7 @@ mark.red-text {
 }
 
 .all-graphs {
-  height: 50vh;
+  /* height: 50vh; */
   display: flex;
   flex-direction: column;
   width: 860px;
@@ -159,28 +159,53 @@ mark.red-text {
 .all-graphs .down-graphs {
   display: flex;
   flex-direction: row;
-  height: 650px;
+  height: 258px;
   margin-top: 2rem;
-}
-.all-graphs .down-graphs div {
-  width: 33%;
+  justify-content: space-between;
+  /* & div {
+      width: 258px;
+  } */
 }
 
 .objectifs-graph {
   background-color: #FF0101;
+  width: 258px;
 }
 
 .activity-graph {
   background-color: #282D30;
+  padding: 1rem;
+  width: 258px;
 }
 
 .scoremoyen-graph {
   background-color: #FBFBFB;
-  border: 2px solid blue;
+  position: relative;
+  width: 258px;
+}
+
+.scoremoyen-title {
+  position: absolute;
+  top: 50px;
+  left: 0;
+}
+
+.scoremoyen-result {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  width: 95px;
 }
 
 .average-container {
   width: 260px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .objectifs-custom-tooltip {
@@ -207,7 +232,7 @@ mark.red-text {
   display: flex;
   padding: 1.5rem;
   background-color: #FBFBFB;
-  margin: 1rem;
+  margin-left: 2rem;
   border-radius: 5px;
 }
 

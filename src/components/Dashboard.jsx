@@ -5,6 +5,7 @@ import ActivityType from "./ActivityType";
 import MainActivity from "./MainActivity";
 import Objectifs from "./Objectifs";
 import ScoreMoyen from "./ScoreMoyen";
+import ScoreMoyenLabel from "./ScoreMoyenLabel";
 import SmallCard from "./SmallCard";
 
 /**
@@ -54,7 +55,9 @@ const Dashboard = () => {
                 <ActivityType />
               </div>
               <div className="scoremoyen-graph">
+                <div className="scoremoyen-title">Score</div>
                 <ScoreMoyen data={scoreMoyen} />
+                <ScoreMoyenLabel score={scoreMoyen}/>
               </div>
             </div>
           </div>

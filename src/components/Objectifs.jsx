@@ -33,7 +33,7 @@ const CustomTooltip = ({ payload, active }) => {
 const CustomHover = ({ points }) => {
   return (
     <rect
-      className="average-custom-hover"
+      className="objectifs-custom-hover"
       x={points[0].x}
       y={0}
       height="100%"
