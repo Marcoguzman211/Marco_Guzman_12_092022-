@@ -3,6 +3,11 @@ import { useEffect } from "react";
 import { Legend, PolarAngleAxis, PolarGrid, PolarRadiusAxis, Radar, RadarChart, ResponsiveContainer } from "recharts";
 import { getUserDataPerformance } from "../utils/API";
 
+
+/**
+ * 
+ * @returns {JSX.Element} of Activity type rechart's chart.
+ */
 const ActivityType = () => {
   const [userDataPerformance, setUserDataPerformance] = useState(null);
 

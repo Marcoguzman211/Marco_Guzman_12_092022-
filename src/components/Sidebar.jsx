@@ -4,6 +4,10 @@ import weightIcon from "../assets/weight-icon.png";
 import bikeIcon from "../assets/bike-icon.png";
 import swimmingIcon from "../assets/swimming-icon.png";
 
+/**
+ * 
+ * @returns {JSX.Element} of the sidebar containing the icons.
+ */
 const Sidebar = () => {
   return (
     <div className="sidebar-container">

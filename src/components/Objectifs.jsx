@@ -5,6 +5,12 @@ import { dayConverter } from "../utils/converter";
 import PropTypes from "prop-types";
 import ObjectifsLabel from "./ObjectifsLabel";
 
+/**
+ * 
+ * @param {array} payload 
+ * @param {bool} active 
+ * @returns {JSX} Custom tooltip for the average sessions chart.
+ */
 const CustomTooltip = ({ payload, active }) => {
   if (active) {
     return (
@@ -19,6 +25,11 @@ const CustomTooltip = ({ payload, active }) => {
   return null;
 };
 
+/**
+ * 
+ * @param {number} points 
+ * @returns {JSX.Element} Custom hover for the average sessions chart.
+ */
 const CustomHover = ({ points }) => {
   return (
     <rect
@@ -32,6 +43,10 @@ const CustomHover = ({ points }) => {
   );
 };
 
+/**
+ * 
+ * @returns {JSX.Element} of Average sessions type rechart's chart.
+ */
 const Objectifs = () => {
   const [userDataAverageSessions, setUserDataAverageSessions] = useState(null);
 

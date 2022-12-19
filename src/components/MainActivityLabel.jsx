@@ -2,7 +2,10 @@ import React from "react";
 import redDot from "../assets/red-dot.png";
 import blackDot from "../assets/black-dot.png";
 
-
+/**
+ * 
+ * @returns {JSX.Element} Label for the Activity type rechart's chart.
+ */
 const MainActivityLabel = () => {
   return (
     <div className="main-activity-label-container">

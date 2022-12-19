@@ -6,8 +6,12 @@ import cheeseburguerIcon from "../assets/cheeseburger-icon.png";
 import { useState } from "react";
 import { useEffect } from "react";
 
+/**
+ * 
+ * @param {Array} data 
+ * @returns {JSX.Element} of the small card containing one icon and information.
+ */
 const SmallCard = ( data ) => {
-
     const [property, setProperty] =useState(data.data.property);
     const [value, setValue] =useState(data.data.value);
     const [image, setImage] = useState(null); 

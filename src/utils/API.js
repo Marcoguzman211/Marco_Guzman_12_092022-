@@ -1,6 +1,10 @@
 import axios from "axios";
 import { performanceTranslator } from "./converter";
 
+/**
+ *
+ * @returns {Promise} containing the user data
+ */
 export const getUserData = async () => {
   try {
     const data = await axios.get(
@@ -13,6 +17,9 @@ export const getUserData = async () => {
 };
 
 // Get Activity data
+/**
+ * @returns {Promise} containing the user activity data
+ */
 export const getUserDataActivity = async () => {
   try {
     const data = await axios.get(
@@ -29,6 +36,9 @@ export const getUserDataActivity = async () => {
 };
 
 // Get average sessions data
+/**
+ * @returns {Promise} containing the user average sessions data
+ **/
 export const getUserDataAverageSessions = async () => {
   try {
     const data = await axios.get(
@@ -40,6 +50,9 @@ export const getUserDataAverageSessions = async () => {
   }
 };
 
+/**
+ * @returns {Promise} containing the user performance data
+ */
 export const getUserDataPerformance = async () => {
   try {
     const dataFetched = await axios.get(
@@ -67,16 +80,3 @@ export const getUserDataPerformance = async () => {
     console.log(error);
   }
 };
-
-/* 
-4.1 Possible endpoints
-This project includes four endpoints that you will be able to use:
-
-http://localhost:3000/user/${userId} - retrieves information from a user. This first endpoint includes the user id, user information (first name, last name and age), the current day's score (todayScore) and key data (calorie, macronutrient, etc.).
-http://localhost:3000/user/${userId}/activity - retrieves a user's activity day by day with kilograms and calories.
-http://localhost:3000/user/${userId}/average-sessions - retrieves the average sessions of a user per day. The week starts on Monday.
-http://localhost:3000/user/${userId}/performance - retrieves a user's performance (energy, endurance, etc.).
-
-
-
-*/

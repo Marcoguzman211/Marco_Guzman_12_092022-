@@ -1,6 +1,10 @@
 import React from "react";
 import logo from "../assets/logo.png";
 
+/**
+ * 
+ * @returns {JSX.Element} of the navbar containing the logo and the links.
+ */
 const Navbar = () => {
   return (
     <div className="navbar-container">

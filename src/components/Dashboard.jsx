@@ -7,6 +7,10 @@ import Objectifs from "./Objectifs";
 import ScoreMoyen from "./ScoreMoyen";
 import SmallCard from "./SmallCard";
 
+/**
+ * 
+ * @returns jsx of Dashboard
+ */
 const Dashboard = () => {
   const [userData, setUserData] = useState(null);
   const [userFirstName, setUserFirstName] = useState(null);
@@ -30,7 +34,6 @@ const Dashboard = () => {
     };
     elements.push(<SmallCard data={object} key={property}/>);
   }
-
   return (
     <div className="dashboard-main-content">
         <div className="dashboard-header">

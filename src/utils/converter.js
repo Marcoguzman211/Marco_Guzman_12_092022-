@@ -1,7 +1,18 @@
+/**
+ * Convert a date to a string
+ * @param {Date} date
+ * @returns {String} date (number) converted into string format
+ */
 export const dayConverter = (day) => {
   const days = ["L", "M", "M", "J", "V", "S", "D"];
   return days[day];
 };
+
+/**
+ *
+ * @param {string} kind
+ * @returns {string} translated into french
+ */
 
 export const performanceTranslator = (kind) => {
   switch (kind) {

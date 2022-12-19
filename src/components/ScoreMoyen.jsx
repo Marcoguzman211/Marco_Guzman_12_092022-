@@ -1,6 +1,11 @@
 import React from "react";
 import { PieChart, Pie, Cell, ResponsiveContainer } from "recharts";
 
+/**
+ * 
+ * @param {object} data 
+ * @returns {JSX.Element} of the score moyen rechart's chart.
+ */
 const ScoreMoyen = (data) => {
     const convertedScore = data.data * 100;
     const finalData = [

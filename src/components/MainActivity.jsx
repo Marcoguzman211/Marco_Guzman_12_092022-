@@ -6,7 +6,7 @@ import { getUserDataActivity } from "../utils/API";
 import MainActivityLabel from "./MainActivityLabel";
 
 /**
- * Phrase de la tooltip
+ * Creates a custom tooltip for the daily activity chart.
  * @param {bool} active 
  * @param {array} payload 
  * @returns {JSX}
@@ -23,7 +23,10 @@ const CustomTooltip = ({ active, payload }) => {
   return null;
 };
 
-
+/**
+ * 
+ * @returns {JSX.Element} of Activity type rechart's chart.
+ */
 const MainActivity = () => {
   const [userDataActivity, setUserDataActivity] = useState(null);
 
