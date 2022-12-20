@@ -1,119 +1,122 @@
 .dashboard-main-content {
-    display: flex; 
-    flex-direction: column;
-    display: block;
-    width: 100%;
-    padding: 3rem;
+  display: flex;
+  flex-direction: column;
+  display: block;
+  width: 100%;
+  padding: 6rem;
 }
 
 .dashboard-header {
-    width: 100%; 
-    & h1 {
-        font-size: 2rem;
-    }
+  width: 100%;
+  & h1 {
+    font-size: 2rem;
+  }
 
-    & p {
-        margin-top: 1rem;
-    } 
+  & p {
+    margin-top: 1rem;
+  }
 }
 
 mark.red-text {
-    color:#ff0000;
-    background: none;
+  color: #ff0000;
+  background: none;
 }
 
 .all-graphs-plus-average {
-    display: flex; 
-    flex-direction: row;
-    margin-top: 4rem;
+  display: flex;
+  flex-direction: row;
+  margin-top: 4rem;
 }
 
 .all-graphs {
-    /* height: 50vh; */
+  /* height: 50vh; */
+  display: flex;
+  flex-direction: column;
+  width: 860px;
+
+  .up-graph {
+    height: 350px;
+    padding-bottom: 5rem;
+    background-color: #fbfbfb;
+    border-radius: 10px;
+  }
+  .down-graphs {
     display: flex;
-    flex-direction: column;
-    width: 860px;
+    flex-direction: row;
+    height: 258px;
+    margin-top: 2rem;
+    justify-content: space-between;
 
-    .up-graph {
-		height: 350px;
-        padding-bottom: 5rem;
-        background-color: #FBFBFB;
-        border-radius: 10px;
-    }
-    .down-graphs {
-        display: flex;
-        flex-direction: row;
-        height: 258px;
-        margin-top: 2rem;
-        justify-content: space-between;
-
-        /* & div {
+    /* & div {
             width: 258px;
         } */
-    }
+  }
 }
 
 .objectifs-graph {
-    background-color: $primary-red;
-    width: 258px;
+  background-color: $primary-red;
+  width: 258px;
+  border-radius: 10px;
 }
 
 .activity-graph {
-    background-color: #282D30;
-    padding: 1rem;
-    width: 258px;
-} 
+  background-color: #282d30;
+  padding: 1rem;
+  width: 258px;
+  border-radius: 10px;
+}
 
 //Score moyen container
 .scoremoyen-graph {
-    background-color: $gray-color;
-    position: relative;
-    width: 258px;
+  background-color: $gray-color;
+  position: relative;
+  width: 258px;
+  border-radius: 10px;
 }
 
 .scoremoyen-title {
-    position: absolute;
-    top: 50px;
-    left: 0;
+  position: absolute;
+  top: 15px;
+  left: 20px;
+  font-weight: 600;
 }
 
 .scoremoyen-result {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    width: 95px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  width: 95px;
 }
-
 
 //Fin Score moyen container
 
 .average-container {
-    width: 260px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+  width: 260px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .objectifs-custom-tooltip {
-    background-color: white;
-    font-size: 8px;
-    padding: 6px 7px;
+  background-color: white;
+  font-size: 8px;
+  padding: 6px 7px;
 }
 
 .objectifs-label-container {
-    position: absolute;
-    font-size: 15px;
-    color: #FFFFFF;
-    margin-top: 29px;
-    margin-left: 34px;
-    width: 147px;
-    opacity: 50%;
+  position: absolute;
+  font-size: 15px;
+  color: #ffffff;
+  margin-top: 29px;
+  margin-left: 34px;
+  width: 147px;
+  opacity: 50%;
 }
 
 .objectifs-custom-hover {
-    stroke: transparent;
+  stroke: transparent;
 }

@@ -1,24 +1,24 @@
 .main {
-    display: flex;
-    flex-direction: row;
+  display: flex;
+  flex-direction: row;
 }
 
 .activity-custom-tooltip {
-    background-color: $primary-red;
-    color: white;
-    padding: 0.5rem;
-    gap: 2rem;
-    & p {
-        font-size: 12px;
-    }
+  background-color: $primary-red;
+  color: white;
+  padding: 0.5rem;
+  gap: 2rem;
+  & p {
+    font-size: 12px;
+  }
 }
 
 .main-activity-label-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem 1rem;
+  & div {
     display: flex;
-    justify-content: space-between;
-    padding: 2rem 1rem;
-    & div {
-        display: flex;
-        gap: 1rem;
-    }
+    gap: 1rem;
+  }
 }

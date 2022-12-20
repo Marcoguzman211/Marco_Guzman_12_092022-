@@ -1,19 +1,19 @@
 .smallcard-container {
-    display: flex;
-    padding: 1.5rem;
-    background-color: $gray-color;
-    margin-left: 2rem;
-    border-radius: 5px;
+  display: flex;
+  padding: 1.5rem;
+  background-color: $gray-color;
+  margin-left: 2rem;
+  border-radius: 5px;
 }
 
 .smallcard-image {
-    padding: 1rem;
-    border-radius: 10px;
+  padding: 1rem;
+  border-radius: 10px;
 }
 
 .smallcard-texts {
-    padding: 1rem;
-    & p {
-        font-size: .8rem;
-    }
+  padding: 1rem;
+  & p {
+    font-size: 0.8rem;
+  }
 }

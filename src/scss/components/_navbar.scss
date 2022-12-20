@@ -1,18 +1,18 @@
 .navbar-container {
-    display: flex;
-    padding: .5rem;
-    justify-content: space-between;
-    background-color: $background-color;
-    z-index: 2;
-    & img {
-        height: 3rem;
-        margin-left: 1rem;
-    }
+  display: flex;
+  padding: 0.5rem;
+  justify-content: space-between;
+  background-color: $background-color;
+  z-index: 2;
+  & img {
+    height: 3rem;
+    margin-left: 1rem;
+  }
 
-    & p {
-        align-self: center;
-        color: #FFF;
-        font-weight: 600;
-        margin-right: 5rem;
-    }
+  & p {
+    align-self: center;
+    color: #fff;
+    font-weight: 600;
+    margin-right: 5rem;
+  }
 }

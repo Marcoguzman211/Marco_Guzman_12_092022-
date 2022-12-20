@@ -96,7 +96,7 @@ input {
   flex-direction: column-reverse;
   background-color: #020203;
   width: 5rem;
-  height: 100vh;
+  min-height: 100vh;
   justify-content: center;
   align-items: center;
 }
@@ -120,7 +120,7 @@ input {
   flex-direction: column;
   display: block;
   width: 100%;
-  padding: 3rem;
+  padding: 6rem;
 }
 
 .dashboard-header {
@@ -170,24 +170,28 @@ mark.red-text {
 .objectifs-graph {
   background-color: #FF0101;
   width: 258px;
+  border-radius: 10px;
 }
 
 .activity-graph {
   background-color: #282D30;
   padding: 1rem;
   width: 258px;
+  border-radius: 10px;
 }
 
 .scoremoyen-graph {
   background-color: #FBFBFB;
   position: relative;
   width: 258px;
+  border-radius: 10px;
 }
 
 .scoremoyen-title {
   position: absolute;
-  top: 50px;
-  left: 0;
+  top: 15px;
+  left: 20px;
+  font-weight: 600;
 }
 
 .scoremoyen-result {
