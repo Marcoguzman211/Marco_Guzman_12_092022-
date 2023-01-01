@@ -22,7 +22,7 @@ const Dashboard = () => {
       //Gets username from API response
       setUserData(data.keyData);
       setUserFirstName(data.userInfos.firstName);
-      setScoreMoyen(data.score);
+      setScoreMoyen(data.score || data.todayScore);
     });
   }, []);
 
