@@ -12,7 +12,7 @@ const Navbar = () => {
       <p>Accueil</p>
       <p>Profil</p>
       <p>Réglages</p>
-      <p>Commaunaté</p>
+      <p>Communauté</p>
     </div>
   );
 };

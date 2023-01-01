@@ -1,5 +1,6 @@
 import React from "react";
 import { PieChart, Pie, Cell, ResponsiveContainer } from "recharts";
+import PropTypes from "prop-types";
 
 /**
  *
@@ -49,5 +50,13 @@ const ScoreMoyen = (data) => {
     </>
   );
 };
+
+ScoreMoyen.propTypes = {
+  score: PropTypes.number,
+};
+ScoreMoyen.defaultProps = {
+    score: 0,
+};
+
 
 export default ScoreMoyen;

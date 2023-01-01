@@ -28,7 +28,6 @@ const Dashboard = () => {
 
   let elements = [];
   for (const property in userData) {
-    /* console.log(`${property}: ${userData[property]}`); */
     let object = {
       property: property,
       value: userData[property]
