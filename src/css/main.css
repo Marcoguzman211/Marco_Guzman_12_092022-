@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap");
 *, *:before, *:after {
   box-sizing: border-box;
 }
@@ -7,13 +8,10 @@ html, body, div, span, object, iframe, figure, h1, h2, h3, h4, h5, h6, p, blockq
   padding: 0;
   border: 0;
   font-size: 100%;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Roboto", sans-serif;
   vertical-align: baseline;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
-  -webkit-text-size-adjust: none;
-     -moz-text-size-adjust: none;
-          text-size-adjust: none;
 }
 
 footer, header, nav, section, main {
@@ -35,7 +33,6 @@ blockquote, q {
 
 blockquote:before, blockquote:after, q:before, q:after {
   content: "";
-  content: none;
 }
 
 table {
@@ -60,6 +57,8 @@ input {
   gap: 2rem;
 }
 .activity-custom-tooltip p {
+  padding-top: 0.3rem;
+  padding-bottom: 0.3rem;
   font-size: 12px;
 }
 
@@ -71,6 +70,10 @@ input {
 .main-activity-label-container div {
   display: flex;
   gap: 1rem;
+}
+
+.main-activity-label-container p img {
+  margin-right: 0.4rem;
 }
 
 .navbar-container {
@@ -86,7 +89,7 @@ input {
 }
 .navbar-container p {
   align-self: center;
-  color: #FFF;
+  color: #fff;
   font-weight: 600;
   margin-right: 5rem;
 }
@@ -107,8 +110,7 @@ input {
 }
 .sidebar-container p {
   color: #FFF;
-  -ms-writing-mode: tb-lr;
-      writing-mode: vertical-lr;
+  writing-mode: vertical-lr;
   text-orientation: mixed;
   transform: rotate(180deg);
   margin-top: 4rem;
@@ -153,7 +155,7 @@ mark.red-text {
 .all-graphs .up-graph {
   height: 350px;
   padding-bottom: 5rem;
-  background-color: #FBFBFB;
+  background-color: #fbfbfb;
   border-radius: 10px;
 }
 .all-graphs .down-graphs {
@@ -162,9 +164,6 @@ mark.red-text {
   height: 258px;
   margin-top: 2rem;
   justify-content: space-between;
-  /* & div {
-      width: 258px;
-  } */
 }
 
 .objectifs-graph {
@@ -174,8 +173,8 @@ mark.red-text {
 }
 
 .activity-graph {
-  background-color: #282D30;
-  padding: 1rem;
+  background-color: #282d30;
+  padding: 0.3rem;
   width: 258px;
   border-radius: 10px;
 }
@@ -205,6 +204,15 @@ mark.red-text {
   width: 95px;
 }
 
+.scoremoyen-result-number {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.scoremoyen-result-text {
+  margin-top: 0.5rem;
+}
+
 .average-container {
   width: 260px;
   display: flex;
@@ -221,7 +229,7 @@ mark.red-text {
 .objectifs-label-container {
   position: absolute;
   font-size: 15px;
-  color: #FFFFFF;
+  color: #ffffff;
   margin-top: 29px;
   margin-left: 34px;
   width: 147px;
@@ -248,6 +256,13 @@ mark.red-text {
 .smallcard-texts {
   padding: 1rem;
 }
+.smallcard-texts h3 {
+  font-size: 1.2rem;
+  font-weight: 600;
+}
 .smallcard-texts p {
   font-size: 0.8rem;
-}/*# sourceMappingURL=main.css.map */
+  margin-top: 0.4rem;
+}
+
+/*# sourceMappingURL=main.css.map */

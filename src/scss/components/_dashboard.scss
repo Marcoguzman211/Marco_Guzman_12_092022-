@@ -46,10 +46,6 @@ mark.red-text {
     height: 258px;
     margin-top: 2rem;
     justify-content: space-between;
-
-    /* & div {
-            width: 258px;
-        } */
   }
 }
 
@@ -61,7 +57,7 @@ mark.red-text {
 
 .activity-graph {
   background-color: #282d30;
-  padding: 1rem;
+  padding: .3rem;
   width: 258px;
   border-radius: 10px;
 }
@@ -90,6 +86,15 @@ mark.red-text {
   flex-direction: column;
   text-align: center;
   width: 95px;
+}
+
+.scoremoyen-result-number {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.scoremoyen-result-text {
+  margin-top: .5rem;
 }
 
 //Fin Score moyen container

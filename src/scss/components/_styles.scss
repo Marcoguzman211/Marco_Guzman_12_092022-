@@ -9,6 +9,8 @@
   padding: 0.5rem;
   gap: 2rem;
   & p {
+    padding-top: .3rem;
+    padding-bottom: .3rem;
     font-size: 12px;
   }
 }
@@ -20,5 +22,11 @@
   & div {
     display: flex;
     gap: 1rem;
+  }
+}
+
+.main-activity-label-container {
+  & p img{
+    margin-right: .4rem;
   }
 }

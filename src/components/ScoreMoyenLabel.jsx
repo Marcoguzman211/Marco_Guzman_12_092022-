@@ -5,9 +5,9 @@ const ScoreMoyenLabel = ({ score }) => {
   return (
     <div>
       <div className="scoremoyen-result">
-        <div>{score * 100}%</div>
-        <div>de votre</div>
-        <div>objectif</div>
+        <div className="scoremoyen-result-number">{score * 100}%</div>
+        <div className="scoremoyen-result-text">de votre</div>
+        <div className="scoremoyen-result-text">objectif</div>
       </div>
     </div>
   );

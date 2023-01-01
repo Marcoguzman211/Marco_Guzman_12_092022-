@@ -26,20 +26,22 @@ const ActivityType = () => {
         alert("Error getting user data " + err);
       });
   }, []);
+
   return (
-    <>
+      <>
+        {userDataPerformance &&
       <ResponsiveContainer width="100%" height="100%">
         <RadarChart
           width="50%"
           height="50%"
           cx="50%"
           cy="50%"
-          outerRadius="55%"
+          outerRadius="70%"
           data={userDataPerformance}>
           <PolarGrid radialLines={false} />
           <PolarAngleAxis
             dataKey="kind"
-            tick={{ fontSize: 11 }}
+            tick={{ fontSize: 9, fontWeight: 800 }}
             tickLine={false}
             axisLine={false}
             stroke="#ffffff"
@@ -47,7 +49,7 @@ const ActivityType = () => {
           <Radar dataKey="value" stroke="#e60000" fill="#e60000" fillOpacity={0.6} />
           <PolarRadiusAxis axisLine={false} tick={false} />
         </RadarChart>
-      </ResponsiveContainer>
+      </ResponsiveContainer> }
     </>
   );
 };
