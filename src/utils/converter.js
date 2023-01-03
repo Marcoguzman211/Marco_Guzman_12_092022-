@@ -1,7 +1,7 @@
 /**
- * Convert a date to a string
- * @param {Date} date
- * @returns {String} date (number) converted into string format
+ * Convert a day to a string
+ * @param {number} day
+ * @returns {String} day (number) converted into string format
  */
 export const dayConverter = (day) => {
   const days = ["L", "M", "M", "J", "V", "S", "D"];

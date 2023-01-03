@@ -35,6 +35,7 @@ const Dashboard = () => {
     elements.push(<SmallCard data={object} key={property} />);
   }
   return (
+      /* Header */
     <div className="dashboard-main-content">
       <div className="dashboard-header">
         <h1>
@@ -42,7 +43,7 @@ const Dashboard = () => {
         </h1>
         <p>Félicitation ! Vous avez explosé vos objectifs hier 👏</p>
       </div>
-      {/* Main Activity */}
+      {/* Graphiques Recharts */}
       <div className="all-graphs-plus-average">
         <div className="all-graphs">
           <div className="up-graph">

@@ -3,12 +3,11 @@ import { PieChart, Pie, Cell, ResponsiveContainer } from "recharts";
 import PropTypes from "prop-types";
 
 /**
- *
- * @param {object} data
- * @returns {JSX.Element} of the score moyen rechart's chart.
+ * @param {number} score
+ * @returns {JSX.Element} of the score moyen Recharts's chart.
  */
-const ScoreMoyen = (data) => {
-  const convertedScore = data.data * 100;
+const ScoreMoyen = (score) => {
+  const convertedScore = score.data * 100;
   const finalData = [
     {
       name: "score-passed",

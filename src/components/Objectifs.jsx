@@ -52,8 +52,8 @@ const CustomHover = ({ points }) => {
 };
 
 /**
- *
- * @returns {JSX.Element} of Average sessions type rechart's chart.
+ *Graphique Durée moyenne des sessions
+ * @returns {JSX.Element} of Average sessions type Recharts's chart.
  */
 const Objectifs = () => {
   const [userDataAverageSessions, setUserDataAverageSessions] = useState(null);
