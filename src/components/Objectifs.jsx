@@ -14,7 +14,7 @@ import PropTypes from "prop-types";
 import ObjectifsLabel from "./ObjectifsLabel";
 
 /**
- *
+ *Brève explication du projet.
  * @param {array} payload
  * @param {bool} active
  * @returns {JSX} Custom tooltip for the average sessions chart.
